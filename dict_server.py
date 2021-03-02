@@ -209,5 +209,5 @@ class DictDB:
 
 
 if __name__ == '__main__':
-    dict_server = DictServer(host="0.0.0.0", port=8880)
+    dict_server = DictServer(host="0.0.0.0", port=8888)
     dict_server.start()

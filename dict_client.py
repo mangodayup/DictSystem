@@ -4,7 +4,7 @@ from socket import *
 
 
 class ClientView:
-    ADDR = ("127.0.0.1",8880)
+    ADDR = ("127.0.0.1",8888)
     def __init__(self):
         self.__sock = self.__connect()
         self.__controller = ClientController()
@@ -64,7 +64,7 @@ class ClientView:
             self.main()
         else:
             print("您的输入有误!请重新输入!")
-            self.__select_items2()
+            self.__select_items2(name)
 
     def main(self):
         while True:
